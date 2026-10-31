@@ -178,7 +178,7 @@ PRIVACY = {
       <h2>8. Changing your choices and deleting your data</h2>
       <ul>
         <li><strong>Advertising identifier:</strong> iOS Settings → Privacy &amp; Security → Tracking, then turn off Tap'n Repeat.</li>
-        <li><strong>Consent for ads (EEA, UK, Switzerland):</strong> delete and reinstall the app; the consent form will be shown again at the next launch.</li>
+        <li><strong>Consent for ads (EEA, UK, Switzerland):</strong> on the home screen, tap the privacy button (raised hand, next to the trophy) to open the consent form again and change or withdraw your choice at any time.</li>
         <li><strong>Game Center:</strong> sign out in iOS Settings → Game Center.</li>
         <li><strong>Progress:</strong> deleting the app erases everything it stored on your phone.</li>
       </ul>
@@ -257,7 +257,7 @@ PRIVACY = {
       <h2>8. Changer tes choix et supprimer tes données</h2>
       <ul>
         <li><strong>Identifiant publicitaire :</strong> Réglages iOS → Confidentialité et sécurité → Suivi, puis désactive Tap'n Repeat.</li>
-        <li><strong>Consentement pour la publicité (EEE, Royaume-Uni, Suisse) :</strong> supprime et réinstalle l’app ; le formulaire s’affichera de nouveau au lancement suivant.</li>
+        <li><strong>Consentement pour la publicité (EEE, Royaume-Uni, Suisse) :</strong> sur l’écran d’accueil, touche le bouton Confidentialité (la main levée, à côté du trophée) pour rouvrir le formulaire et modifier ou retirer ton choix à tout moment.</li>
         <li><strong>Game Center :</strong> déconnecte-toi dans Réglages iOS → Game Center.</li>
         <li><strong>Progression :</strong> supprimer l’app efface tout ce qu’elle a stocké sur ton téléphone.</li>
       </ul>
