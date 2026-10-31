@@ -1,0 +1,85 @@
+/* Tap'n Repeat site: same toy-box identity as the app (cream lid, bright pieces, rounded type).
+   System fonts only, no third-party requests, no cookies. */
+
+:root {
+  --bg: #fff6e5;
+  --lid: #f3e2c0;
+  --card: #fffcf4;
+  --text: #3b2a20;
+  --muted: #8a7566;
+  --line: #ead8b4;
+  --orange: #ff8f1f;
+  --blue: #2f5fd6;
+  --red: #e5484d;
+  --green: #2fa866;
+  --yellow: #ffd83a;
+  --radius: 22px;
+  --max: 760px;
+}
+
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: ui-rounded, "SF Pro Rounded", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 17px;
+  line-height: 1.6;
+}
+a { color: var(--blue); text-underline-offset: 3px; }
+a:focus-visible { outline: 3px solid var(--orange); outline-offset: 3px; }
+
+.wrap { max-width: var(--max); margin: 0 auto; padding: 0 20px; }
+
+header.site { display: flex; align-items: center; justify-content: space-between; padding: 18px 0; gap: 12px; }
+.brand { display: flex; align-items: center; gap: 10px; font-weight: 900; font-size: 20px; color: var(--text); text-decoration: none; white-space: nowrap; }
+@media (max-width: 420px) { .brand { font-size: 17px; } .brand img { width: 30px; height: 30px; } nav.site a { margin-left: 10px; font-size: 14px; } }
+.brand img { width: 36px; height: 36px; border-radius: 9px; }
+nav.site { display: flex; flex-wrap: wrap; justify-content: flex-end; }
+nav.site a { color: var(--muted); text-decoration: none; margin-left: 14px; font-size: 15px; font-weight: 600; }
+nav.site a:hover, nav.site a[aria-current="page"] { color: var(--text); }
+
+/* Landing */
+.hero { padding: 32px 0 20px; text-align: center; }
+.hero .icon { width: 120px; height: 120px; border-radius: 27px; box-shadow: 0 10px 30px rgba(59, 42, 32, .18); }
+.hero h1 { font-size: clamp(32px, 8vw, 50px); line-height: 1.08; letter-spacing: -0.02em; margin: 22px 0 12px; font-weight: 900; }
+.hero p.lead { color: var(--muted); font-size: 19px; margin: 0 auto 26px; max-width: 34em; }
+
+.shapes { display: flex; justify-content: center; gap: 14px; margin: 0 0 26px; }
+.shape { width: 40px; height: 40px; -webkit-mask: var(--m) center / contain no-repeat; mask: var(--m) center / contain no-repeat; }
+.shape.rond { --m: url("rond.svg"); background: var(--red); }
+.shape.carre { --m: url("carre.svg"); background: var(--orange); }
+.shape.etoile { --m: url("etoile.svg"); background: var(--blue); }
+.shape.coeur { --m: url("coeur.svg"); background: var(--green); }
+
+.button {
+  display: inline-flex; align-items: center; justify-content: center;
+  min-height: 56px; padding: 12px 28px; border-radius: 999px;
+  font-weight: 800; font-size: 17px; text-decoration: none;
+  background: var(--orange); color: #fff; box-shadow: 0 4px 0 #d9700c;
+}
+.button:active { transform: translateY(2px); box-shadow: 0 2px 0 #d9700c; }
+
+.features { display: grid; gap: 14px; margin: 36px 0 44px; }
+@media (min-width: 600px) { .features { grid-template-columns: 1fr 1fr; } }
+.feature { background: var(--card); border: 2px solid var(--line); border-radius: var(--radius); padding: 18px 20px; }
+.feature h3 { margin: 0 0 4px; font-size: 18px; }
+.feature p { margin: 0; color: var(--muted); }
+
+/* Text pages */
+.doc h1 { font-size: 34px; line-height: 1.15; margin: 28px 0 6px; font-weight: 900; }
+.doc .updated { color: var(--muted); margin: 0 0 18px; }
+.doc .summary { background: var(--card); border: 2px solid var(--line); border-radius: var(--radius); padding: 16px 20px; margin: 0 0 8px; }
+.doc h2 { font-size: 22px; margin: 32px 0 8px; }
+.doc h3 { font-size: 18px; margin: 20px 0 4px; }
+.doc p, .doc li { color: var(--text); }
+.doc ul { padding-left: 22px; }
+.doc table { width: 100%; border-collapse: collapse; font-size: 15px; margin: 8px 0; }
+.doc th, .doc td { text-align: left; vertical-align: top; padding: 8px 10px; border-bottom: 1px solid var(--line); }
+.doc th { color: var(--muted); font-weight: 700; }
+.table-wrap { overflow-x: auto; }
+
+footer.site { border-top: 2px solid var(--line); margin-top: 40px; padding: 22px 0 40px; color: var(--muted); font-size: 14px; }
+footer.site nav a { color: var(--muted); margin-right: 16px; display: inline-block; }
+footer.site p { margin: 8px 0 0; }
